@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Vault</title>
+<meta name="description" content="Personal Vault — a private, end-to-end encrypted password and document vault.">
+<style>
+  :root { --bg:#0B1220; --surface:#162033; --border:#24324D; --primary:#1E8BFF; --text:#F1F5F9; --muted:#94A3B8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:linear-gradient(#0E1A2E, var(--bg)) fixed; color:var(--text);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 40px; }
+  .logo { width:72px; height:72px; border-radius:20px; background:var(--surface); border:1px solid rgba(30,139,255,.35);
+          display:grid; place-items:center; box-shadow:0 12px 32px rgba(30,139,255,.25); font-size:36px; }
+  h1 { font-size: 34px; margin: 24px 0 8px; letter-spacing:-.5px; }
+  p.lead { color: var(--muted); font-size: 18px; margin-top: 0; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 32px 0; }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:18px; }
+  .card b { display:block; margin-bottom:4px; }
+  .card span { color: var(--muted); font-size: 14px; }
+  a { color: var(--primary); }
+  footer { color: var(--muted); font-size: 14px; border-top:1px solid var(--border); padding-top:20px; margin-top:40px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo" aria-hidden="true">🛡️</div>
+  <h1>Personal Vault</h1>
+  <p class="lead">A private, end-to-end encrypted vault for passwords, two-factor codes, secure notes and documents.</p>
+
+  <div class="grid">
+    <div class="card"><b>Zero-knowledge</b><span>Everything is encrypted on your device with AES-256-GCM. Your master password never leaves it.</span></div>
+    <div class="card"><b>Your own Google Drive</b><span>Optional encrypted backup in a hidden app folder of your Drive. Google can't read it.</span></div>
+    <div class="card"><b>Security Center</b><span>Finds leaked, weak and reused passwords and accounts without 2FA.</span></div>
+    <div class="card"><b>Biometrics &amp; PIN</b><span>Unlock with your fingerprint, face or PIN. Auto-locks when you leave.</span></div>
+  </div>
+
+  <p>Personal Vault is a personal, non-commercial app. It has no servers, accounts, ads or analytics.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
